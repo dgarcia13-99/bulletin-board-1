@@ -34,6 +34,13 @@
       </dd>
 
       <dt>
+        Expires on
+      </dt>
+      <dd>
+        <%= @the_post.expires_on%>
+      </dd>
+
+      <dt>
         Created at
       </dt>
       <dd>
@@ -74,6 +81,22 @@
         </label>
 
         <textarea id="body_box" name="query_body"><%= @the_post.body %></textarea>
+      </div>
+
+        <div>
+        <label for="expiration_box">
+          Expires on
+        </label>
+
+        <input type="date" id="expiration_box" name="query_expires_on" value="<%= @the_post.expires_on %>">
+      </div>
+
+        <div>
+        <label for="board_box">
+          Board
+        </label>
+
+        <input type="text" id="board_box" name="query_board_id" value="<%= @the_post.board_id %>">
       </div>
 
       <button>

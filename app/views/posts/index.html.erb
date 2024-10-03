@@ -20,7 +20,7 @@
           Title
         </label>
 
-        <input type="text" id="title_box" name="query_title">
+        <input type="text" id="title_box" name="new_post_title">
       </div>
 
       <div>
@@ -28,8 +28,26 @@
           Body
         </label>
 
-        <textarea id="body_box" name="query_body" rows="3"></textarea>
+        <textarea id="body_box" name="new_post_body" rows="3"></textarea>
       </div>
+
+      <div>
+          <label for="expiration_box">
+            Expires on
+          </label>
+
+          <input type="date" id="expiration_box" name="new_post_expiration">
+        </div>
+
+
+      <div>
+        <label for="board_box">
+          Board
+        </label>
+
+        <input type="text" id="board_box" name="board_id">
+      </div>
+
 
       <button>
         Create post
